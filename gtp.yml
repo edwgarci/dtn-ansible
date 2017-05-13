@@ -1,0 +1,11 @@
+# --extra-vars "artifact_path=/path/foo"
+---
+- hosts: portal
+  remote_user: web
+
+  vars:
+    artifact_name: gtp.war
+    context_name: gtp
+
+  roles:
+  - role: deploy-tomcat
