@@ -1,0 +1,11 @@
+# --extra-vars "artifact_path=/path/foo"
+---
+- hosts: portal
+  remote_user: web
+
+  vars:
+    artifact_name: webpreferences.war
+    context_name: webpreferences
+
+  roles:
+  - role: deploy-tomcat

@@ -1,0 +1,4 @@
+---
+- name: delete artifact
+  shell: rm {{ tomcat_path }}/artifacts/{{ artifact_name }}
+  ignore_errors: yes

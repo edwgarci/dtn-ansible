@@ -1,0 +1,11 @@
+# --extra-vars "artifact_path=/path/foo"
+---
+- hosts: portal
+  remote_user: web
+
+  vars:
+    artifact_name: webmonitor2.war
+    context_name: webmonitor2
+
+  roles:
+  - role: deploy-tomcat

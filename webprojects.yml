@@ -1,0 +1,5 @@
+# webmonitor and webpreferences
+---
+- include: webreports.yml
+- include: webpreferences.yml
+- include: webofferapi.yml
