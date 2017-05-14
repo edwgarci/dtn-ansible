@@ -6,6 +6,7 @@
   vars:
     artifact_name: dashboard
     context_name: dashboard
+    source_folder_name: dist
 
   roles:
   - role: create-artifact-folder
