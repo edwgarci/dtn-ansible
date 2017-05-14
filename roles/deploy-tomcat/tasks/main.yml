@@ -1,5 +1,5 @@
 --- 
-- name: Creating the artifacts folder
+- name: Creates "artifacts" folder
   file:
     path: "{{ tomcat_path }}/artifacts"
     state: directory
