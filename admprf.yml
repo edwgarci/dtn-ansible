@@ -4,8 +4,8 @@
   remote_user: web
 
   vars:
-    artifact_name: dashboard
-    context_name: dashboard
+    artifact_name: admprf
+    context_name: admprf
     source_folder_name: dist
 
   roles:
