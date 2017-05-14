@@ -1,0 +1,11 @@
+# --extra-vars "artifact_path=/path/foo"
+---
+- hosts: portal
+  remote_user: web
+
+  vars:
+    artifact_name: oms-daemon.war
+    context_name: oms-daemon
+
+  roles:
+  - role: deploy-tomcat
