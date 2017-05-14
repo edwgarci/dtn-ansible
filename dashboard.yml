@@ -8,4 +8,6 @@
     context_name: dashboard
 
   roles:
-  - role: deploy-tomcat-folder
+  - role: create-artifact-folder
+  - role: copy-artifact-folder
+  - role: undeploy-deploy-artifact

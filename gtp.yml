@@ -8,4 +8,6 @@
     context_name: gtp
 
   roles:
-  - role: deploy-tomcat
+  - role: create-artifact-folder
+  - role: copy-artifact
+  - role: undeploy-deploy-artifact
