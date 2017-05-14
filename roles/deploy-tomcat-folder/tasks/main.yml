@@ -1,0 +1,42 @@
+--- 
+- name: Creating the artifacts folder
+  file:
+    path: "{{ tomcat_path }}/artifacts"
+    state: directory
+  ignore_errors: yes
+
+- name: delete folder
+  file:
+    path: "{{ tomcat_path }}/artifacts/{{ context_name }}"
+    state: absent
+  ignore_errors: yes
+#  
+#- name: delete artifact
+#  file:
+#    path: "{{ tomcat_path }}/artifacts/{{ artifact_name }}"
+#    state: absent
+#  ignore_errors: yes
+#
+- name: Copying the "{{ artifact_name }}" into the server
+  copy: src="{{ artifact_path }}/{{ artifact_name }}" dest="{{ tomcat_path }}/artifacts"
+  when: artifact_path is defined
+
+#- name: Unpacking file "{{ tomcat_path }}"
+#  command: echo 'hola'
+#  command: unzip {{ tomcat_path }}/artifacts/{{ artifact_name }}
+#  ignore_errors: yes
+#- name: Undeploying "{{ context_name }}"
+#  shell: wget --http-user={{ admin_user }} --http-password={{ admin_password }}  "{{ tomcat_manager_url }}/text/undeploy?path=/{{ context_name }}" -O -
+#  ignore_errors: yes
+#  register: wget
+#
+#- debug: 
+#    msg: "Undeploying result {{ wget.stdout }}. "
+#
+#- name: Deploying "{{ context_name }}"
+#  shell: wget --http-user={{ admin_user }} --http-password={{ admin_password }} "{{ tomcat_manager_url }}/text/deploy?path=/{{ context_name }}&war=file:/{{ tomcat_path }}/artifacts/{{ artifact_name }}" -O -
+#  register: wget
+#  notify: delete artifact
+#
+#- debug: 
+#    msg: "Deploying result {{ wget.stdout }}. "

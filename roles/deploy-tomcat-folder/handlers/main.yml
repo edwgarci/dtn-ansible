@@ -1,0 +1,6 @@
+---
+- name: delete artifact
+  file:
+    path: "{{ tomcat_path }}/artifacts/{{ artifact_name }}"
+    state: absent
+  ignore_errors: yes

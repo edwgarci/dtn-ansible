@@ -1,0 +1,3 @@
+---
+- name: Copies the "{{ artifact_name }}" folder into the server
+  synchronize: src="{{ artifact_path }}/{{ artifact_name }}" dest="{{ tomcat_path }}/artifacts"

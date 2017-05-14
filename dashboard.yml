@@ -1,0 +1,11 @@
+# --extra-vars "artifact_path=/path/foo"
+---
+- hosts: portal
+  remote_user: web
+
+  vars:
+    artifact_name: dashboard
+    context_name: dashboard
+
+  roles:
+  - role: deploy-tomcat-folder
