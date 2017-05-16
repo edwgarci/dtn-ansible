@@ -1,3 +1,11 @@
 ---
-- name: Restarts "{{ artifact_name }}" service
-  shell: /etc/init.d/{{ artifact_name }} restart
+- name: Stops {{ artifact_name }} service
+  shell: nohup /etc/init.d/{{ artifact_name }} restart
+  register: out
+  changed_when: False
+
+- debug:
+    msg: "{{ out.stdout }}"
+
+- name: wait
+  wait_for: port={{ microservice_port }} delay=1
