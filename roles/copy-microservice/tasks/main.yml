@@ -1,0 +1,8 @@
+---
+- name: Copies the "{{ artifact_name }}".jar file into the server
+  copy: src="{{ artifact_path }}/{{ artifact_name }}.jar" dest="{{ microservices_path }}/{{ microservice_folder}}/{{ artifact_name }}.jar"
+  when: artifact_path is defined
+  
+- name: Copies the "{{ artifact_name }}".conf file into the server
+  copy: src="{{ artifact_path }}/{{ artifact_name }}.conf" dest="{{ microservices_path }}/{{ microservice_folder}}/{{ artifact_name }}.conf"
+  when: artifact_path is defined

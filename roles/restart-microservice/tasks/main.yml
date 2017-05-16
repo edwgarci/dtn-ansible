@@ -1,0 +1,3 @@
+---
+- name: Restarts "{{ artifact_name }}" service
+  shell: /etc/init.d/{{ artifact_name }} restart

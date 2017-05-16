@@ -6,3 +6,4 @@ tomcat_path=/usr/local/apache-tomcat-7.0.54
 admin_password=z1x2c3
 admin_user=admin
 tomcat_manager_url=http://aghost-app-test02:8086/manager
+microservices_path=/usr/local/oms/microservices
