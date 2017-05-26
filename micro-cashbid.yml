@@ -1,12 +1,12 @@
 # --extra-vars "artifact_path=/path/foo"
 ---
-- hosts: portal
+- hosts: apis
   remote_user: web
 
   vars:
-    artifact_name: micro-auth
-    microservice_folder: auth
-    microservice_port: 8090
+    artifact_name: dtnportal-cashbids-api
+    microservice_folder: cashbids
+    microservice_port: 8093
     
   roles:
   - role: copy-microservice
