@@ -1,0 +1,6 @@
+[apis]
+aghost-app-cat16.dtndmz.com
+aghost-app-cat17.dtndmz.com
+
+[apis:vars]
+microservices_path=/usr/local/microservices
