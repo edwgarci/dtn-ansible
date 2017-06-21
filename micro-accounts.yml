@@ -10,4 +10,4 @@
     
   roles:
   - role: copy-microservice
-  - role: restart-microservice
+  - role: stop-start-microservice

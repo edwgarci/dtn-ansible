@@ -1,3 +1,10 @@
 [portal]
 aghost-app-pre09.dtndmz.com
 aghost-app-pre10.dtndmz.com
+
+[apis]
+aghost-app-pre15.dtn.com
+aghost-app-pre16.dtn.com
+
+[apis:vars]
+microservices_path=/usr/local/microservices
