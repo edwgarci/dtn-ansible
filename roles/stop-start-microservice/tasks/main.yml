@@ -2,7 +2,7 @@
 - name: Stops {{ artifact_name }} service
   shell: nohup /etc/init.d/{{ artifact_name }} stop
 - pause:
-	seconds: 10
+    seconds: 10
 
 - name: Stops {{ artifact_name }} service
   shell: nohup /etc/init.d/{{ artifact_name }} start
