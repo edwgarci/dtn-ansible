@@ -4,5 +4,5 @@
   when: artifact_path is defined
   
 - name: Copies the "{{ artifact_name }}".conf file into the server
-  copy: src="{{ artifact_path }}/{{ artifact_name }}.sh" dest="{{ microservices_path }}/{{ microservice_folder}}/{{ artifact_name }}.sh"
+  copy: src="{{ artifact_path }}/{{ artifact_name }}.sh" dest="{{ microservices_path }}/{{ microservice_folder}}/{{ artifact_name }}.sh mode=0755"
   when: artifact_path is defined
