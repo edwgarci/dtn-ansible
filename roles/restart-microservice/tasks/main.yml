@@ -1,13 +1,8 @@
----
-- name: Stopping {{ artifact_name }} service
-  shell: nohup /etc/init.d/{{ artifact_name }} stop
-- pause:
-	seconds: 10
-  
-- name: Starting {{ artifact_name }} service
-  shell: nohup /etc/init.d/{{ artifact_name }} start
+--- 
+- name: Restarting {{ artifact_name }} service
+  shell: nohup {{ microservices_path }}/{{ microservice_folder}}/{{ artifact_name }}.sh restart
   register: out
-  changed_when: False
+  changed_when: false
 
 - debug:
     msg: "{{ out.stdout }}"
