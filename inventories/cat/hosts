@@ -1,6 +1,14 @@
+[portal]
+aghost-app-cat09.dtndmz.com
+aghost-app-cat10.dtndmz.com
+aghost-app-cat11.dtndmz.com
+
 [apis]
 aghost-app-cat16.dtndmz.com
 aghost-app-cat17.dtndmz.com
 
 [apis:vars]
 microservices_path=/usr/local/microservices
+
+[portal:vars]
+microservices_path=/usr/local/oms/microservices
