@@ -1,6 +1,7 @@
 [apis]
 aghost-app-prod44.dtndmz.com
 aghost-app-prod45.dtndmz.com
+aghost-app-prod46.dtndmz.com
 
 [apis:vars]
 microservices_path=/usr/local/microservices
