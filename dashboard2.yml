@@ -1,0 +1,12 @@
+# --extra-vars "artifact_path=/path/foo"
+---
+- hosts: portal
+  remote_user: web
+
+  vars:
+    artifact_name: dashboard
+    source_folder_name: dist
+
+  roles:
+  - role: delete-angularjs-folder
+  - role: copy-angularjs-folder
