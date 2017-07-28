@@ -5,7 +5,6 @@
 
   vars:
     artifact_name: gtp.war
-	tomcat_path: /usr/local/tomcat11
 	tomcat_port: 8086
 
   roles:

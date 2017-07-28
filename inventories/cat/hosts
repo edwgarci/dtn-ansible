@@ -12,3 +12,4 @@ microservices_path=/usr/local/microservices
 
 [portal:vars]
 microservices_path=/usr/local/oms/microservices
+tomcat_path=/usr/local/tomcat11
