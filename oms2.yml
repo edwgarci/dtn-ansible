@@ -1,0 +1,13 @@
+# --extra-vars "artifact_path=/path/foo"
+---
+- hosts: portal
+  remote_user: web
+
+  vars:
+    artifact_name: oms.war
+	tomcat_path: /usr/local/tomcat11
+	tomcat_port: 8086
+
+  roles:
+  - role: copy-warfile
+  - role: restart-tomcat

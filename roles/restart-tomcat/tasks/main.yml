@@ -1,0 +1,11 @@
+--- 
+- name: Restarting tomcat
+  shell: nohup {{ tomcat_path }}/bin/tomcat.sh restart
+  register: out
+  changed_when: false
+
+- debug:
+    msg: "{{ out.stdout }}"
+
+# - name: wait
+  # wait_for: port={{ tomcat_port }} delay=1

@@ -1,0 +1,4 @@
+---
+- name: Copying the "{{ artifact_name }}" into the server
+  copy: src="{{ artifact_path }}/{{ artifact_name }}" dest="{{ tomcat_path }}/webapps/{{ artifact_name }}"
+  when: artifact_path is defined
