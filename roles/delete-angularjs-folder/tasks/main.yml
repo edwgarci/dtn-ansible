@@ -1,6 +1,5 @@
 --- 
 - name: Deletes the angularjs folder
   file:
-    path: "{{ tomcat_path }}/{{ artifact_name }}/"
+    path: "{{ tomcat_path }}/webapps/{{ artifact_name }}/"
     state: absent
-  ignore_errors: yes
