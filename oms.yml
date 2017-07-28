@@ -5,9 +5,8 @@
 
   vars:
     artifact_name: oms.war
-    context_name: oms
+    tomcat_port: 8086
 
   roles:
-  - role: create-artifact-folder
-  - role: copy-artifact
-  - role: undeploy-deploy-artifact
+  - role: copy-warfile
+  - role: restart-tomcat

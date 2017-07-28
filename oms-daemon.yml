@@ -5,9 +5,8 @@
 
   vars:
     artifact_name: oms-daemon.war
-    context_name: oms-daemon
+    tomcat_port: 8086
 
   roles:
-  - role: create-artifact-folder
-  - role: copy-artifact
-  - role: undeploy-deploy-artifact
+  - role: copy-warfile
+  - role: restart-tomcat
