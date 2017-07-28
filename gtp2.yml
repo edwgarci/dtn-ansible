@@ -5,7 +5,7 @@
 
   vars:
     artifact_name: gtp.war
-	tomcat_port: 8086
+    tomcat_port: 8086
 
   roles:
   - role: copy-warfile
