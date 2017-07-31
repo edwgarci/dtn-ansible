@@ -1,6 +1,8 @@
 ---
 - name: Copying war files into the server
-  copy: src="{{ artifact_path }}" dest="{{ tomcat_path }}/webapps/"
+  copy: 
+    src: "{{ item }}"
+    dest: "{{ tomcat_path }}/webapps/"
   with_fileglob:
-    - *.war
+    - "{{ artifact_path }}/*.war"
   when: artifact_path is defined
