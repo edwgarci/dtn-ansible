@@ -1,3 +1,16 @@
+[portal-master]
+aghost-app-prod20.dtndmz.com
+aghost-app-prod21.dtndmz.com
+aghost-app-prod28.dtndmz.com
+aghost-app-prod29.dtndmz.com
+
+[portal-slave]
+aghost-app-prod30.dtndmz.com
+aghost-app-prod31.dtndmz.com
+aghost-app-prod38.dtndmz.com
+aghost-app-prod39.dtndmz.com
+aghost-app-prod40.dtndmz.com
+
 [apis]
 aghost-app-prod44.dtndmz.com
 aghost-app-prod45.dtndmz.com

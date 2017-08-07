@@ -7,6 +7,10 @@ aghost-app-cat11.dtndmz.com
 aghost-app-cat16.dtndmz.com
 aghost-app-cat17.dtndmz.com
 
+[cashbids-apis]
+aghost-app-cat12.dtndmz.com
+aghost-app-cat13.dtndmz.com
+
 [apis:vars]
 microservices_path=/usr/local/microservices
 
