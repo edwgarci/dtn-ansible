@@ -11,25 +11,6 @@ aghost-app-cat17.dtndmz.com
 aghost-app-cat12.dtndmz.com
 aghost-app-cat13.dtndmz.com
 
-[oms-apis:children]
-oms-apis-master
-oms-apis-slave
-
-[oms-apis-master]
+[oms-apis]
 aghost-app-cat14.dtndmz.com
-
-[oms-apis-slave]
 aghost-app-cat15.dtndmz.com
-
-[oms-apis:vars]
-microservices_path=/usr/local/microservices
-
-[cashbids-apis:vars]
-microservices_path=/usr/local/microservices
-
-[apis:vars]
-microservices_path=/usr/local/microservices
-
-[portal:vars]
-microservices_path=/usr/local/oms/microservices
-tomcat_path=/usr/local/tomcat11
