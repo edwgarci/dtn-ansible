@@ -1,6 +1,6 @@
 # --extra-vars "artifact_path=/path/foo"
 ---
-- hosts: apis
+- hosts: oms-apis
   remote_user: web
 
   vars:
