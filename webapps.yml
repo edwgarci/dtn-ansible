@@ -7,5 +7,5 @@
     tomcat_port: 8086
 
   roles:
-  - role: copy-warfiles
-  - role: restart-tomcat
+  - { role: copy-warfiles, tags: [ 'copy' ]}
+  - { role: restart-tomcat, tags: [ 'restart' ]}

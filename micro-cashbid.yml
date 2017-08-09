@@ -9,5 +9,5 @@
     microservice_port: 8093
     
   roles:
-  - role: copy-microservice
-  - role: restart-microservice
+  - { role: copy-microservice, tags: [ 'copy' ]}
+  - { role: restart-microservice, tags: [ 'restart' ]}
